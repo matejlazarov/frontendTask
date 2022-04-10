@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    outline: 1px;
+    border: 1px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 2s linear;
+
+}
+
+.container{
+    max-width: 1400px;
+    margin:0 auto;
+    text-align: center;
+    padding: 15px 10px;
+ 
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    
+}
+
+.container .box-container .box{
+    display: none;
+    border-style: solid;
+    border-color: bisque;
+    border-width: 3px;
+    padding: 5px;
+}
+
+.container .box-container .box:nth-child(1),
+.container .box-container .box:nth-child(2),
+.container .box-container .box:nth-child(3),
+.container .box-container .box:nth-child(4){
+  display: inline-block;
+}
+
+
+.container .box-container .box .image{
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 5px;
+    padding: 20px;
+    border-radius: 5px;
+    float: left;
+}
+
+.container .box-container .box .image img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.container .box-container .box .icon{
+    float: right;
+}
+
+.container .box-container .box .profile_pic{
+    margin: 0px;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    float: left;
+
+}
+.container .box-container .box .profile_pic img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.container .box-container{
+    text-align: left;
+}
+
+#load-more{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid rgb(73, 117, 194);
+    color: rgb(73, 117, 194);
+    background-color: #ffff;
+    font-size: 16px;
+}
+
+#load-more:hover{
+    background-color: rgb(73, 117, 194);
+    border-color: rgb(73, 117, 194);
+    color: #ffff;
+    cursor: pointer;
+}
+
+.container .box-container .box .caption{
+    display: inline-block;
+}
+
+.container .box-container .box .like{
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.container .box-container .box{
+    position: relative;
+}
+
+.container .box-container .box .caption{
+    margin-bottom: 50px;
+}
